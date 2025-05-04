@@ -20,6 +20,12 @@ WEREAD_BOOK_INFO = "https://weread.qq.com/api/book/info"
 WEREAD_READDATA_DETAIL = "https://weread.qq.com/api/readdata/detail"
 WEREAD_HISTORY_URL = "https://weread.qq.com/api/readdata/summary?synckey=0"
 
+# 设置全局环境变量
+os.environ.update({
+    'WEREAD_COOKIE': 'pgv_pvid=6544476150; RK=n2klQmsyXS; ptcz=8d6a5ee70f62c46f711d85347e3b2577b8bc75292f2ccf4196bc20801d1784e4; wr_gid=278793264; pac_uid=0_n6ntSGKa4mi0n; _qimei_uuid42=1851c0e281e100b40e7ed298ab09f245ffc399c6cd; _qimei_h38=e06d02140e7ed298ab09f24502000000d1851c; _qimei_q32=9fb4baccc9b41589dfd1a3b3e454290e; _qimei_q36=dde42e61e789deb7156a8a3530001971840a; qq_domain_video_guid_verify=5f795dfc64bc41f0; tvfe_boss_uuid=48d02440a97e5c0c; suid=user_0_n6ntSGKa4mi0n; _qimei_fingerprint=8f9e01256c36497ce3b6de592a903348; wr_theme=dark; wr_fp=358926208; wr_localvid=; wr_name=; wr_avatar=; wr_gender=; wr_vid=243064277; wr_pf=2; wr_rt=web%40AtfBhls~KVVW6eeOY9l_AL; wr_skey=fkoUp7Yt',
+    'NOTION_TOKEN': 'ntn_S86785512859kusxekh3tPaclLnnszAlqKIZyAzcXI08nR',
+    'NOTION_PAGE': '1e920548-2ef5-81cb-9d47-ee70a44bdf34',
+})
 
 class WeReadApi:
     def __init__(self):
