@@ -15,9 +15,9 @@ WEREAD_NOTEBOOKS_URL = "https://weread.qq.com/api/user/notebook"
 WEREAD_BOOKMARKLIST_URL = "https://weread.qq.com/api/book/bookmarklist"
 WEREAD_CHAPTER_INFO = "https://weread.qq.com/api/book/chapterInfos"
 WEREAD_READ_INFO_URL = "https://weread.qq.com/web/book/getProgress"
-WEREAD_REVIEW_LIST_URL = "https://weread.qq.com/api/review/list"
+WEREAD_REVIEW_LIST_URL = "https://weread.qq.com/web/review/list"
 WEREAD_BOOK_INFO = "https://weread.qq.com/api/book/info"
-# WEREAD_READDATA_DETAIL = "https://weread.qq.com/api/readdata/detail"
+WEREAD_READDATA_DETAIL = "https://weread.qq.com/api/readdata/detail"
 WEREAD_HISTORY_URL = "https://weread.qq.com/api/readdata/summary?synckey=0"
 
 
@@ -150,7 +150,7 @@ class WeReadApi:
             "appver":"8.2.5.10163885",
             "basever":"8.2.5.10163885",
             "osver":"12",
-            "User-Agent": "WeRead/8.2.5 WRBrand/xiaomi Dalvik/2.1.0 (Linux; U; Android 12; Redmi Note 7 Pro Build/SQ3A.220705.004)",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0",
         }
         r = self.session.get(WEREAD_READ_INFO_URL,headers=headers, params=params)
         if r.ok:
